@@ -8,6 +8,11 @@ class Score extends Model
 {
     protected $fillable = [
         'name',
-        'score'
+        'score',
+        'user_id',
+        'username',
+        'firstname',
+        'lastname',
+        'photo_url'
     ];
 }

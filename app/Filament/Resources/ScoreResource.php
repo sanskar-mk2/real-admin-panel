@@ -23,9 +23,17 @@ class ScoreResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('score')
                     ->sortable(),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable(),
+                Tables\Columns\TextColumn::make('username')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('firstname')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('lastname')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\ImageColumn::make('photo_url')
+                    ->circular(),
             ]);
     }
 
